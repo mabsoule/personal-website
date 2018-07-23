@@ -1,0 +1,288 @@
+/* CSS Stylesheet */
+
+
+/******************************************
+Style Reset
+******************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of Style Reset */
+
+
+/******************************************
+Sitewide Styling
+******************************************/
+
+.sitewide {
+  background: rgb(255,255,255);
+  font-family: Roboto;
+  color: rgb(74,74,74);
+  font-size: 15pt;
+}
+
+.fullWidth {
+  width: 100%
+}
+
+  /* Disable transitions on load */
+.onload {
+  /* transition: top 2s ease-in-out; */
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.down-arrow {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+/******************************************
+Navbar
+******************************************/
+
+body {
+  /* padding-top: 100px; */
+}
+
+header {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  background: white;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: top 0.4s ease-in-out;
+}
+
+/* Navbar as a block */
+nav {
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Right Navbar Section */
+.rightnav {
+  float: right;
+}
+
+/* Right Navbar Elements */
+.rightnav a {
+  margin-left: 40px;
+}
+
+/* Left Navbar Section */
+.leftnav {
+  float: left;
+}
+
+/* Left Navbar Element */
+.leftnav a {
+  margin-right: 0px;
+}
+
+/* Navbar Element */
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15pt;
+  font-weight: 100;
+  color: rgb(74,74,74);
+}
+
+nav a:hover {
+  color: rgb(150,150,150);
+}
+
+/* Hide nav */
+.nav-up {
+  top: -100px;
+}
+
+/******************************************
+Quotes
+******************************************/
+
+.quotes h1 {
+  clear: both; /* does not allow elements to float on left or right of the element */
+  display: block;
+  font-size: 30pt;
+  font-weight: lighter;
+  line-height: 150%;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.quotes h1 {
+  margin-left: 0px;
+  margin-top: 25vh;
+  margin-bottom: 29vh;
+}
+
+/* .quotes h1 .first-quote-final {
+  margin-top: 25vh;
+  margin-bottom: 29vh;
+  transform: margin-top 4s ease-in-out;
+} */
+
+/******************************************
+Case Studies
+******************************************/
+
+.case-studies {
+  width: 100%
+  display: block;
+  background-color: white;
+  height: auto;
+}
+
+/******************************************
+Deep Dive
+******************************************/
+
+.deep-dive {
+  width: 100%
+  display: block;
+  height: auto;
+}
+
+.deep-dive h1 {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30pt;
+  font-weight: 500;
+}
+
+.project {
+  width: 46.3%;
+  margin-left: 30px;
+  float: left;
+}
+
+.deep-dive h2 {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+.deep-dive h3 {
+  display: inline-block;
+  font-weight: lighter;
+}
+
+.deep-dive img {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/******************************************
+Tinkering
+******************************************/
+
+.tinkering{
+  width: 100%
+  display: block;
+  height: auto;
+}
+
+.tinkering h1 {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30pt;
+  font-weight: 500;
+}
+
+.tinkering h2 {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+.tinkering h3 {
+  display: inline-block;
+  font-weight: lighter;
+}
+
+.tinkering img {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/******************************************
+Footer
+******************************************/
+
+footer {
+  display: block;
+  height: 40px;
+
+}
+
+/* contact button styling */
+footer a.contact {
+  display: block;
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  background-color: #26C48C;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+}
+
+footer h2 {
+  font-weight: lighter;
+}
+
+footer p {
+  font-weight: lighter;
+}
