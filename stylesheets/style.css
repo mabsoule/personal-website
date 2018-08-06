@@ -71,9 +71,15 @@ Sitewide Styling
   -o-transition: none !important;
 }
 
+
+
+
+
+
 /******************************************
 Navbar
 ******************************************/
+
 
 body {
   /* padding-top: 100px; */
@@ -137,9 +143,15 @@ nav a:hover {
   color: rgb(150,150,150);
 }
 
+
+
 /******************************************
-Quotes
+Launchpad
 ******************************************/
+
+  /******************************************
+  Quotes
+  ******************************************/
 
 .quotes h1 {
   clear: both; /* does not allow elements to float on left or right of the element */
@@ -149,24 +161,24 @@ Quotes
   line-height: 150%;
   width: 60vw;
   margin: auto;
-  padding-top: 40vh;
-  padding-bottom: 40vh;
+  padding-top: 42vh;
+  padding-bottom: 42vh;
 }
 
 .quotes h1.first-quote-onload {
-  /* margin-top: calc(50vh - 150px); */
-  margin-bottom: calc(50vh - 150px);
+  padding-top: 42vh;
+  padding-bottom: 42vh;
 }
 
 .quotes b {
   color: #E5E5E5;
 }
 
-/******************************************
-Case Studies
-******************************************/
+  /******************************************
+  Case Studies
+  ******************************************/
 
-.case-studies .video-1 {
+.case-studies .video {
   width: 100%;
   display: block;
   background-color: white;
@@ -236,6 +248,16 @@ div.video-2 {
   line-height: 150%;
 }
 
+.explain-launch {
+  display: block;
+  margin: auto;
+  width: 60vw;
+  font-weight: lighter;
+  font-size: 15pt;
+  line-height: 150%;
+  padding-top: 100px;
+}
+
 .download {
   display: block;
   margin: auto;
@@ -247,7 +269,7 @@ div.video-2 {
   height: 40px;
   line-height: 40px;
   border-radius: 20px;
-  margin: 25px auto 100px auto;
+  margin: 25px auto 0px auto;
 }
 
  .download:hover {
@@ -257,120 +279,173 @@ div.video-2 {
   transition: 0.5s;
 }
 
+
+
+
+
 /******************************************
-Deep Dive
+Portfolio
 ******************************************/
 
+
+.project_layout {
+  clear: both;
+  /* height: 100vw; */
+}
+
 .deep-dive {
-  width: 100%
+  clear: both;
   display: block;
+}
+
+.space {
+  clear: both;
+  display: block;
+  height: calc(15vw + 15vh);
+}
+
+  /******************************************
+  Parallax
+  ******************************************/
+
+.parallax_layout {
+  display: inline-block;
+  width: 50vw;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax_layout_left {
+  float: left;
+  margin-left: 30px;
+}
+
+.parallax_layout_right {
+  float: right;
+  margin-right: 30px;
+}
+
+.parallax__frame {
+  display: inline-block;
+  /* height: 395px;
+  width: 631px; */
+  width: 50vw;
+  height: auto;
+  overflow: hidden;
+}
+
+.parallax_layout .parallax__frame img{
+  display: inline-block;
+  /* height: 395px;
+  width: 631px; */
+  width: 50vw;
+  height: auto;
+  filter: grayscale(100%);
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+
+.parallax__frame:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.hover-in {
+}
+
+.hover-out {
+}
+
+  /******************************************
+  Text
+  ******************************************/
+
+.deep-dive .project_title_right {
+  display: inline-block;
+  float: left;
+  width: calc(50vw - 30px);
   height: auto;
 }
 
-.deep-dive h1 {
+.deep-dive .project_title_left {
   display: inline-block;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 30pt;
-  font-weight: 500;
+  float: right;
+  width: calc(50vw - 30px);
+  height: auto;
 }
 
-.deep-dive h2 {
-  display: inline-block;
-  margin-left: 20px;
-  font-weight: lighter;
-}
-
-.deep-dive h3 {
-  display: inline-block;
-  font-weight: 300;
-}
-
-.project {
-  width: 46.3%;
-  margin-left: 30px;
-  float: left;
-  margin-bottom: 100px;
-}
-
-.deep-dive .project h3 {
-  /* color: rgb(150,150,150); */
-  color: #4A4A4A;
-}
-
-.deep-dive img {
-  display: inline-block;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.deep-dive .title {
-  /* clear: both; does not allow elements to float on left or right of the element */
+.title h1 {
+  clear: both; /* does not allow elements to float on left or right of the element */
   display: block;
   font-size: 30pt;
   font-weight: lighter;
   line-height: 150%;
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-.deep-dive .title h4 {
-  display: block;
   width: 60vw;
-  margin: 40vh auto 40vh auto;
-  font-weight: light;
-  padding: 0px 0px 0px 0px;
-
+  margin: auto;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
 }
 
-.deep-dive .title .bold {
-  font-weight: 500;
+.title h1.first-quote-onload {
+  padding-top: 42vh;
+  padding-bottom: 42vh;
 }
 
-.deep-dive .project h5 {
-  font-size: 12pt;
+.deep-dive .project_title a {
+  display: block;
+  width: 35vw; /* Text column width*/
+  margin: auto; /* Center column */
+}
+
+.deep-dive .project_title h2 {
+  font-size: 4vw;
   font-weight: lighter;
-  color: #979797;
+  transition: color .5s ease-out;
+  color: #4A4A4A;
 }
+
+.deep-dive .project_title h3 {
+  font-size: 1.75vw;
+  font-weight: lighter;
+  line-height: 150%;
+  /* text-align: justify;  THIS LOOKS GOOD FOR MULTI LINES */
+  text-align: left;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  color: #4A4A4A;
+
+  transition: color 1.5s ease-out;
+}
+
+.deep-dive .project_title h4 {
+  font-size: 1vw;
+  font-weight: lighter;
+  line-height: 150%;
+  color: #E5E5E5;
+
+  transition: color 0.5s ease-out;
+}
+
+.deep-dive .project_title .change_color h2 {
+  transition: color 0.5s ease-out;
+  color: #4A4A4A;
+}
+.deep-dive .project_title .change_color h3 {
+  transition: color 1.5s ease-out;
+  transition-delay: 0s;
+  color: #4A4A4A;
+}
+.deep-dive .project_title .change_color h4 {
+  color: #E5E5E5;
+}
+
 
 /******************************************
-Tinkering
+Profile
 ******************************************/
 
-.tinkering{
-  width: 100%
-  display: block;
-  height: auto;
-}
 
-.tinkering h1 {
-  display: inline-block;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 30pt;
-  font-weight: 500;
-}
-
-.tinkering h2 {
-  display: inline-block;
-  margin-left: 20px;
-  font-weight: lighter;
-}
-
-.tinkering h3 {
-  display: inline-block;
-  font-weight: lighter;
-}
-
-.tinkering img {
-  display: inline-block;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
 /******************************************
 Footer
