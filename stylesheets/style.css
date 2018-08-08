@@ -53,10 +53,13 @@ Sitewide Styling
 }
 
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: #F6B3B3; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+  background: #F6B3B3; /* Gecko Browsers */
+}
+::-webkit-selection {
+  background: #F6B3B3; /* Gecko Browsers */
 }
 
 .full-Width {
@@ -70,7 +73,6 @@ Sitewide Styling
   -ms-transition: none !important;
   -o-transition: none !important;
 }
-
 
 
 
@@ -136,11 +138,12 @@ a {
   text-decoration: none;
   font-size: 15pt;
   font-weight: 100;
-  color: rgb(74,74,74);
+  color: #4A4A4A;
 }
 
 nav a:hover {
-  color: rgb(150,150,150);
+  color: #969696;
+  /* color: #FF8888; */
 }
 
 
@@ -149,135 +152,239 @@ nav a:hover {
 Launchpad
 ******************************************/
 
+
+  /******************************************
+  Intro Message
+  ******************************************/
+
+
+    #intro-greeting {
+      text-decoration: none;
+    }
+
+    .morning{
+      color: #FBA4A4;
+    }
+
+    .afternoon{
+      color: #9DC2EB;
+    }
+
+    .evening{
+      color: #B6B3F9;
+    }
+
+    .intro-message{
+      padding-top: 35vh;
+      padding-bottom: 0vh;
+    }
+
+    .intro-message h1 {
+      clear: both; /* does not allow elements to float on left or right of the element */
+      display: block;
+      font-size: 18pt;
+      font-weight: lighter;
+      line-height: 150%;
+      width: 60vw;
+      height: auto;
+      margin: auto;
+    }
+
+    a.portfolio-embeded-link {
+      /* text-decoration: underline; */
+      font-size: 18pt;
+    }
+
+    a.portfolio-embeded-link:hover {
+      color: #969696;
+    }
+
+    .intro-message h2 {
+      clear: both; /* does not allow elements to float on left or right of the element */
+      display: block;
+      font-size: 18pt;
+      font-weight: lighter;
+      line-height: 150%;
+    }
+
+    .keep-going {
+      clear: both;
+      display: inline-block;
+      float: left;
+      width: auto;
+      margin-top: 35px;
+      margin-left: 20vw;
+    }
+
+    .jump-ahead {
+      display: inline-block;
+      float: left;
+      width: auto;
+      margin-left: 10vw;
+      margin-top: 35px;
+    }
+
+
+
+    .intro-button {
+      display: inline-block;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 13pt;
+      width: 150px;
+      line-height: 40px;
+      border-radius: 20px;
+      border: 0.5px solid #E5E5E5;
+      background-color: #FFFFFF;
+      color: #979797;
+
+      margin: 20px 0px 0px 0px;
+      transition: 0.5s;
+    }
+
+    #continue:hover {
+      border-color: #50D78F;
+      background-color: #50D78F;
+      color: #FFFFFF;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s;
+    }
+
+
   /******************************************
   Quotes
   ******************************************/
 
-.quotes h1 {
-  clear: both; /* does not allow elements to float on left or right of the element */
-  display: block;
-  font-size: 30pt;
-  font-weight: lighter;
-  line-height: 150%;
-  width: 60vw;
-  margin: auto;
-  padding-top: 42vh;
-  padding-bottom: 42vh;
-}
+  .quotes h1 {
+    clear: both; /* does not allow elements to float on left or right of the element */
+    display: block;
+    font-size: 30pt;
+    font-weight: lighter;
+    line-height: 150%;
+    width: 60vw;
+    margin: auto;
+    padding-top: 42vh;
+    padding-bottom: 42vh;
+  }
 
-.quotes h1.first-quote-onload {
-  padding-top: 42vh;
-  padding-bottom: 42vh;
-}
+  .quotes h1.first-quote-onload {
+    padding-top: 42vh;
+    padding-bottom: 42vh;
+  }
 
-.quotes b {
-  color: #E5E5E5;
-}
+  .quotes b {
+    color: #E5E5E5;
+  }
 
   /******************************************
   Case Studies
   ******************************************/
 
-.case-studies .video {
-  width: 100%;
-  display: block;
-  background-color: white;
-  height: auto;
-}
+  .case-studies .video {
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: auto;
+  }
 
-.app-icons {
-  padding-top: 100px;
-  /* padding-bottom: 100px;  see .case-studies h1*/
-}
+  .case-studies img {
+    display: block;
+    width: 100%;
+    padding-top: 100px;
+  }
 
-.logo-colours {
-  padding-top: 0px;
-  /* padding-bottom: 100px;  see .case-studies h1*/
-}
+  .case-studies h1 {
+    font-size: 10pt;
+    font-weight: lighter;
+    width: 60vw;
+    text-align: right;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    color: #979797;
+  }
 
-.case-studies h1 {
-  font-size: 12pt;
-  font-weight: lighter;
-  width: 60vw;
-  text-align: right;
-  margin: auto;
-  /* padding-left: calc(100vw - 220px - 200px); */
-  padding-top: 5px;
-  padding-bottom: 100px;
-  color: #979797;
-}
+  .case-studies h1.download-is-below {
+    padding-bottom: 25px;
+  }
 
-.ipad-window {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1;
-}
+  .ipad-window {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+  }
 
-#video-2 {
-  width: 561px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  bottom: 486px; /* move video up to ipad */
-  z-index: 0;
-}
+  #video-2 {
+    width: 561px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 486px; /* move video up to ipad */
+    z-index: 0;
+  }
 
-/* Since video is positioned into iPad... div requires no height */
-div.video-2 {
-  height: 0px;
-}
+  /* Since video is positioned into iPad... div requires no height */
+  div.video-2 {
+    height: 0px;
+  }
 
-/* place gray background around ipad  */
-.ipad-background {
-  width: 100vw;
-  padding-top: 50px;
-  padding-bottom:50px;
-  background-color: #F2F2F2;
-}
+  /* place gray background around ipad  */
+  .ipad-background {
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color: #F2F2F2;
+  }
 
-.origami-download {
-  display: block;
-  margin: auto;
-  width: 60vw;
-  font-weight: lighter;
-  font-size: 15pt;
-  line-height: 150%;
-}
+  .download {
+    display: block;
+    margin: auto;
+    width: 60vw;
+    font-weight: lighter;
+    font-size: 15pt;
+    line-height: 150%;
+  }
 
-.explain-launch {
-  display: block;
-  margin: auto;
-  width: 60vw;
-  font-weight: lighter;
-  font-size: 15pt;
-  line-height: 150%;
-  padding-top: 100px;
-}
+  .explain-launch {
+    display: block;
+    margin: auto;
+    width: 60vw;
+    font-weight: lighter;
+    font-size: 15pt;
+    line-height: 150%;
+    padding-top: 100px;
+  }
 
-.download {
-  display: block;
-  margin: auto;
-  text-align: center;
-  font-weight: lighter;
-  color: white;
-  background-color: #4A4A4A;
-  width: 150px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 20px;
-  margin: 25px auto 0px auto;
-}
+  .download-button {
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 13pt;
+    width: 150px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 0.5px solid #E5E5E5;
+    background-color: #FFFFFF;
+    color: #979797;
+    margin: 25px auto 0px auto;
+  }
 
- .download:hover {
-  color: #4A4A4A;
-  background-color: #26C48C;
-  background-color: #50E3C2;
-  transition: 0.5s;
-}
+
+   .download-button:hover {
+    color: #FFFFFF;
+    background-color: #9DC2EB;
+    border-color: #9DC2EB;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+
 
 
 
@@ -308,137 +415,135 @@ Portfolio
   Parallax
   ******************************************/
 
-.parallax_layout {
-  display: inline-block;
-  width: 50vw;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-}
+  .parallax_layout {
+    display: inline-block;
+    width: 50vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
 
-.parallax_layout_left {
-  float: left;
-  margin-left: 30px;
-}
+  .parallax_layout_left {
+    float: left;
+    margin-left: 30px;
+  }
 
-.parallax_layout_right {
-  float: right;
-  margin-right: 30px;
-}
+  .parallax_layout_right {
+    float: right;
+    margin-right: 30px;
+  }
 
-.parallax__frame {
-  display: inline-block;
-  /* height: 395px;
-  width: 631px; */
-  width: 50vw;
-  height: auto;
-  overflow: hidden;
-}
+  .parallax__frame {
+    display: inline-block;
+    width: 50vw;
+    height: auto;
+    overflow: hidden;
+  }
 
-.parallax_layout .parallax__frame img{
-  display: inline-block;
-  /* height: 395px;
-  width: 631px; */
-  width: 50vw;
-  height: auto;
-  filter: grayscale(100%);
-  transform: scale(1.05);
-  transition: all 0.5s ease-in-out;
-}
+  .parallax_layout .parallax__frame img{
+    display: inline-block;
+    /* height: 395px;
+    width: 631px; */
+    width: 50vw;
+    height: auto;
+    filter: grayscale(100%);
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+  }
 
-.parallax__frame:hover img {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
+  .parallax__frame:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
 
-.hover-in {
-}
+  .hover-in {
+  }
 
-.hover-out {
-}
+  .hover-out {
+  }
 
   /******************************************
   Text
   ******************************************/
 
-.deep-dive .project_title_right {
-  display: inline-block;
-  float: left;
-  width: calc(50vw - 30px);
-  height: auto;
-}
+  .deep-dive .project_title_right {
+    display: inline-block;
+    float: left;
+    width: calc(50vw - 30px);
+    height: auto;
+  }
 
-.deep-dive .project_title_left {
-  display: inline-block;
-  float: right;
-  width: calc(50vw - 30px);
-  height: auto;
-}
+  .deep-dive .project_title_left {
+    display: inline-block;
+    float: right;
+    width: calc(50vw - 30px);
+    height: auto;
+  }
 
-.title h1 {
-  clear: both; /* does not allow elements to float on left or right of the element */
-  display: block;
-  font-size: 30pt;
-  font-weight: lighter;
-  line-height: 150%;
-  width: 60vw;
-  margin: auto;
-  padding-top: 40vh;
-  padding-bottom: 40vh;
-}
+  .title h1 {
+    clear: both; /* does not allow elements to float on left or right of the element */
+    display: block;
+    font-size: 30pt;
+    font-weight: lighter;
+    line-height: 150%;
+    width: 60vw;
+    margin: auto;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+  }
 
-.title h1.first-quote-onload {
-  padding-top: 42vh;
-  padding-bottom: 42vh;
-}
+  .title h1.first-quote-onload {
+    padding-top: 42vh;
+    padding-bottom: 42vh;
+  }
 
-.deep-dive .project_title a {
-  display: block;
-  width: 35vw; /* Text column width*/
-  margin: auto; /* Center column */
-}
+  .deep-dive .project_title a {
+    display: block;
+    width: 35vw; /* Text column width*/
+    margin: auto; /* Center column */
+  }
 
-.deep-dive .project_title h2 {
-  font-size: 4vw;
-  font-weight: lighter;
-  transition: color .5s ease-out;
-  color: #4A4A4A;
-}
+  .deep-dive .project_title h2 {
+    font-size: 4vw;
+    font-weight: lighter;
+    transition: color .5s ease-out;
+    color: #4A4A4A;
+  }
 
-.deep-dive .project_title h3 {
-  font-size: 1.75vw;
-  font-weight: lighter;
-  line-height: 150%;
-  /* text-align: justify;  THIS LOOKS GOOD FOR MULTI LINES */
-  text-align: left;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-  color: #4A4A4A;
+  .deep-dive .project_title h3 {
+    font-size: 1.75vw;
+    font-weight: lighter;
+    line-height: 150%;
+    /* text-align: justify;  THIS LOOKS GOOD FOR MULTI LINES */
+    text-align: left;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    color: #4A4A4A;
 
-  transition: color 1.5s ease-out;
-}
+    transition: color 1.5s ease-out;
+  }
 
-.deep-dive .project_title h4 {
-  font-size: 1vw;
-  font-weight: lighter;
-  line-height: 150%;
-  color: #E5E5E5;
+  .deep-dive .project_title h4 {
+    font-size: 1vw;
+    font-weight: lighter;
+    line-height: 150%;
+    color: #E5E5E5;
 
-  transition: color 0.5s ease-out;
-}
+    transition: color 0.5s ease-out;
+  }
 
-.deep-dive .project_title .change_color h2 {
-  transition: color 0.5s ease-out;
-  color: #4A4A4A;
-}
-.deep-dive .project_title .change_color h3 {
-  transition: color 1.5s ease-out;
-  transition-delay: 0s;
-  color: #4A4A4A;
-}
-.deep-dive .project_title .change_color h4 {
-  color: #E5E5E5;
-}
+  .deep-dive .project_title .change_color h2 {
+    transition: color 0.5s ease-out;
+    color: #4A4A4A;
+  }
+  .deep-dive .project_title .change_color h3 {
+    transition: color 1.5s ease-out;
+    transition-delay: 0s;
+    color: #4A4A4A;
+  }
+  .deep-dive .project_title .change_color h4 {
+    color: #E5E5E5;
+  }
 
 
 /******************************************
@@ -454,29 +559,86 @@ Footer
 footer {
   display: block;
   height: 40px;
-  width: 60vw;
+  width: 100%;
   margin: auto;
 }
 
-/* contact button styling */
-footer a.contact {
-  display: block;
-  text-align: center;
-  font-weight: lighter;
-  color: white;
-  background-color: #4A4A4A;
-  width: 150px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 20px;
-  margin: 25px auto 100px auto;
+div.left-footer {
+  clear: both;
+  display: inline-block;
+  float: left;
+  margin: 0px 0px 0px 0px;
+  padding: 100px 0px 0px 15vw;
+  width: auto;
 }
 
-.contact:hover {
- color: #4A4A4A;
- background-color: #26C48C;
- background-color: #50E3C2;
- transition: 0.5s;
+div.right-footer {
+  display: inline-block;
+  float: left;
+  margin: 0px 0px 0px 0px;
+  padding: 100px 5vw 0px 20vw;
+  width: auto;
+}
+
+.footer-button {
+  display: inline-block;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 13pt;
+  width: 150px;
+  line-height: 40px;
+  border-radius: 20px;
+  border: 0.5px solid #E5E5E5;
+  background-color: #FFFFFF;
+  color: #979797;
+
+  margin: 20px 0px 0px 0px;
+  transition: 0.5s;
+}
+
+.footer-button-right {
+  margin-left: 10px;
+}
+
+.footer-contact {
+  border-color: #50D78F;
+  background-color: #50D78F;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact:hover {
+  border-color: #4A4A4A;
+  background-color: #4A4A4A;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#portfolio:hover {
+  border-color: #FBA4A4;
+  background-color: #FBA4A4;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#profile:hover {
+  border-color: #B6B3F9;
+  background-color: #B6B3F9;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer h1 {
+  font-weight: lighter;
+  color: #4A4A4A;
 }
 
 footer h2 {
@@ -485,11 +647,14 @@ footer h2 {
 }
 
 footer h3 {
+  clear: both;
   font-weight: lighter;
-  color: #E5E5E5;
-  font-size: 12pt;
-  margin: 0px auto 75px auto;
-  width: 152px;
+  color: #979797;
+  font-size: 10pt;
+  margin: 0px auto 0px auto;
+  padding: 75px 0px 50px 0px;
+  text-align: center;
+  width: 500px;
 }
 
 footer p {
