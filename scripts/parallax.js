@@ -7,7 +7,7 @@
 			selector      : ".parallax_image",
 			perspective   : 1000,
 			sensitivity   : 30,
-			invert        : true,
+			invert        : false,
 			shine         : false,
 			hoverInClass  : "hover-in",
 			hoverOutClass : "hover-out",

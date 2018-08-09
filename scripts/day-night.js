@@ -3,9 +3,8 @@
 var currentTime = new Date();
 var hours = currentTime.getHours();
 
-
-if (hours < 12) {
-  document.getElementById("intro-greeting").innerHTML = "Good Morning";
+if (hours >= 0 && hours < 12) {
+  document.getElementById("intro-greeting").innerHTML = "&#x1F305 Good Morning";
   $('u').addClass('morning');
   $('u').removeClass('afternoon');
   $('u').removeClass('evening');
@@ -14,7 +13,7 @@ if (hours < 12) {
   $('a.portfolio-embeded-link').removeClass('evening');
 }
 
-if (12 <= hours < 17) {
+if (hours >= 12 && hours < 17) {
   document.getElementById("intro-greeting").innerHTML = "Good Afternoon";
   $('u#intro-greeting').removeClass('morning');
   $('u#intro-greeting').addClass('afternoon');
@@ -24,7 +23,7 @@ if (12 <= hours < 17) {
   $('a.portfolio-embeded-link').removeClass('evening');
 }
 
-if (hours >= 17) {
+if (hours >= 17 && hours <= 24) {
   document.getElementById("intro-greeting").innerHTML = "Good Evening";
   $('u').removeClass('morning');
   $('u').removeClass('afternoon');

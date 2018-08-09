@@ -182,7 +182,7 @@ Launchpad
     .intro-message h1 {
       clear: both; /* does not allow elements to float on left or right of the element */
       display: block;
-      font-size: 18pt;
+      font-size: 21pt;
       font-weight: lighter;
       line-height: 150%;
       width: 60vw;
@@ -192,7 +192,7 @@ Launchpad
 
     a.portfolio-embeded-link {
       /* text-decoration: underline; */
-      font-size: 18pt;
+      font-size: 21pt;
     }
 
     a.portfolio-embeded-link:hover {
