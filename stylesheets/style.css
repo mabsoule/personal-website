@@ -47,9 +47,10 @@ Sitewide Styling
 
 .sitewide {
   background: rgb(255,255,255);
-  font-family: Roboto;
+  font-family: 'Lato', sans-serif;
   color: rgb(74,74,74);
   font-size: 15pt;
+  font-weight: 300;
 }
 
 ::selection {
@@ -133,11 +134,11 @@ nav {
 }
 
 /* Navbar Element */
-a {
+header a {
   display: inline-block;
   text-decoration: none;
   font-size: 15pt;
-  font-weight: 100;
+  /* font-weight: 400; */
   color: #4A4A4A;
 }
 
@@ -183,11 +184,18 @@ Launchpad
       clear: both; /* does not allow elements to float on left or right of the element */
       display: block;
       font-size: 21pt;
-      font-weight: lighter;
       line-height: 150%;
       width: 60vw;
       height: auto;
       margin: auto;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 15pt;
+      /* font-weight: 300; */
+      color: #4A4A4A;
     }
 
     a.portfolio-embeded-link {
@@ -203,7 +211,6 @@ Launchpad
       clear: both; /* does not allow elements to float on left or right of the element */
       display: block;
       font-size: 18pt;
-      font-weight: lighter;
       line-height: 150%;
     }
 
@@ -229,7 +236,6 @@ Launchpad
     .intro-button {
       display: inline-block;
       text-align: center;
-      font-weight: lighter;
       font-size: 13pt;
       width: 150px;
       line-height: 40px;
@@ -260,7 +266,6 @@ Launchpad
     clear: both; /* does not allow elements to float on left or right of the element */
     display: block;
     font-size: 30pt;
-    font-weight: lighter;
     line-height: 150%;
     width: 60vw;
     margin: auto;
@@ -296,7 +301,6 @@ Launchpad
 
   .case-studies h1 {
     font-size: 10pt;
-    font-weight: lighter;
     width: 60vw;
     text-align: right;
     margin: auto;
@@ -345,7 +349,6 @@ Launchpad
     display: block;
     margin: auto;
     width: 60vw;
-    font-weight: lighter;
     font-size: 15pt;
     line-height: 150%;
   }
@@ -354,7 +357,6 @@ Launchpad
     display: block;
     margin: auto;
     width: 60vw;
-    font-weight: lighter;
     font-size: 15pt;
     line-height: 150%;
     padding-top: 100px;
@@ -363,7 +365,6 @@ Launchpad
   .download-button {
     display: block;
     text-align: center;
-    font-weight: lighter;
     font-size: 13pt;
     width: 150px;
     line-height: 40px;
@@ -484,7 +485,6 @@ Portfolio
     clear: both; /* does not allow elements to float on left or right of the element */
     display: block;
     font-size: 30pt;
-    font-weight: lighter;
     line-height: 150%;
     width: 60vw;
     margin: auto;
@@ -505,14 +505,12 @@ Portfolio
 
   .deep-dive .project_title h2 {
     font-size: 4vw;
-    font-weight: lighter;
     transition: color .5s ease-out;
     color: #4A4A4A;
   }
 
   .deep-dive .project_title h3 {
     font-size: 1.75vw;
-    font-weight: lighter;
     line-height: 150%;
     /* text-align: justify;  THIS LOOKS GOOD FOR MULTI LINES */
     text-align: left;
@@ -525,7 +523,6 @@ Portfolio
 
   .deep-dive .project_title h4 {
     font-size: 1vw;
-    font-weight: lighter;
     line-height: 150%;
     color: #E5E5E5;
 
@@ -583,7 +580,6 @@ div.right-footer {
 .footer-button {
   display: inline-block;
   text-align: center;
-  font-weight: lighter;
   font-size: 13pt;
   width: 150px;
   line-height: 40px;
@@ -637,18 +633,15 @@ div.right-footer {
 }
 
 footer h1 {
-  font-weight: lighter;
   color: #4A4A4A;
 }
 
 footer h2 {
-  font-weight: lighter;
   color: #4A4A4A;
 }
 
 footer h3 {
   clear: both;
-  font-weight: lighter;
   color: #979797;
   font-size: 10pt;
   margin: 0px auto 0px auto;
@@ -658,5 +651,5 @@ footer h3 {
 }
 
 footer p {
-  font-weight: lighter;
+  /* font-weight: 100; */
 }

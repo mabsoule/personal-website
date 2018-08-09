@@ -14,7 +14,7 @@ if (hours >= 0 && hours < 12) {
 }
 
 if (hours >= 12 && hours < 17) {
-  document.getElementById("intro-greeting").innerHTML = "Good Afternoon";
+  document.getElementById("intro-greeting").innerHTML = "&#x1F3DE Good Afternoon";
   $('u#intro-greeting').removeClass('morning');
   $('u#intro-greeting').addClass('afternoon');
   $('u#intro-greeting').removeClass('evening');
@@ -23,8 +23,18 @@ if (hours >= 12 && hours < 17) {
   $('a.portfolio-embeded-link').removeClass('evening');
 }
 
-if (hours >= 17 && hours <= 24) {
-  document.getElementById("intro-greeting").innerHTML = "Good Evening";
+if (hours >= 17 && hours < 20) {
+  document.getElementById("intro-greeting").innerHTML = " &#x1F307 Good Evening";
+  $('u').removeClass('morning');
+  $('u').removeClass('afternoon');
+  $('u').addClass('evening');
+  $('a.portfolio-embeded-link').removeClass('morning');
+  $('a.portfolio-embeded-link').removeClass('afternoon');
+  $('a.portfolio-embeded-link').addClass('evening');
+}
+
+if (hours >= 20 && hours <= 24) {
+  document.getElementById("intro-greeting").innerHTML = " &#x1F303 Good Evening";
   $('u').removeClass('morning');
   $('u').removeClass('afternoon');
   $('u').addClass('evening');
