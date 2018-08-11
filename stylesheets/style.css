@@ -1,6 +1,5 @@
 /* CSS Stylesheet */
 
-
 /******************************************
 Style Reset
 ******************************************/
@@ -175,6 +174,30 @@ Launchpad
       color: #B6B3F9;
     }
 
+    span.welcome {
+      border-right: 2px solid;
+      border-color: #4A4A4A;
+      animation: text-cursor 1s steps(1) infinite;
+      -webkit-animation: text-cursor 1s steps(1) infinite;
+      -moz-animation: text-cursor 1s steps(1) infinite;
+    }
+
+    @keyframes text-cursor {
+      50% {
+        border-color: transparent;
+      }
+    }
+    @-webkit-keyframes text-cursor {
+      50% {
+        border-color: transparent;
+      }
+    }
+    @-moz-keyframes text-cursor {
+      50% {
+        border-color: transparent;
+      }
+    }
+
     .intro-message{
       padding-top: 35vh;
       padding-bottom: 0vh;
@@ -183,7 +206,7 @@ Launchpad
     .intro-message h1 {
       clear: both; /* does not allow elements to float on left or right of the element */
       display: block;
-      font-size: 21pt;
+      font-size: 50pt;
       line-height: 150%;
       width: 60vw;
       height: auto;
