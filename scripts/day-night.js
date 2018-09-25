@@ -7,34 +7,52 @@ var text = 'Hello';
 if (hours >= 0 && hours < 12) {
   // document.getElementById("intro-greeting").innerHTML = 'Good Morning';
   text ='Good Morning';
-  $('u').addClass('morning');
-  $('u').removeClass('afternoon');
-  $('u').removeClass('evening');
-  $('a.portfolio-embeded-link').addClass('morning');
-  $('a.portfolio-embeded-link').removeClass('afternoon');
-  $('a.portfolio-embeded-link').removeClass('evening');
+  $('span.welcome').addClass('morning');
+  $('span.welcome').removeClass('afternoon');
+  $('span.welcome').removeClass('evening');
+  $('a.currentPage').addClass('background-morning');
+  $('a.currentPage').removeClass('background-afternoon');
+  $('a.currentPage').removeClass('background-evening');
+  $('a.work').addClass('morning');
+  $('a.work').removeClass('afternoon');
+  $('a.work').removeClass('evening');
+  $('a.quotes-button').addClass('button-morning');
+  $('a.quotes-button').removeClass('button-afternoon');
+  $('a.quotes-button').removeClass('button-evening');
 }
 
 if (hours >= 12 && hours < 17) {
   // document.getElementById("intro-greeting").innerHTML = "Good Afternoon";
   text ='Good Afternoon';
-  $('u#intro-greeting').removeClass('morning');
-  $('u#intro-greeting').addClass('afternoon');
-  $('u#intro-greeting').removeClass('evening');
-  $('a.portfolio-embeded-link').removeClass('morning');
-  $('a.portfolio-embeded-link').addClass('afternoon');
-  $('a.portfolio-embeded-link').removeClass('evening');
+  $('span.welcome').removeClass('morning');
+  $('span.welcome').addClass('afternoon');
+  $('span.welcome').removeClass('evening');
+  $('a.currentPage').addClass('background-afternoon');
+  $('a.currentPage').removeClass('background-morning');
+  $('a.currentPage').removeClass('background-evening');
+  $('a.work').addClass('afternoon');
+  $('a.work').removeClass('morning');
+  $('a.work').removeClass('evening');
+  $('a.quotes-button').addClass('button-afternoon');
+  $('a.quotes-button').removeClass('button-morning');
+  $('a.quotes-button').removeClass('button-evening');
 }
 
 if (hours >= 17 && hours <= 24) {
   // document.getElementById("intro-greeting").innerHTML = "Good Evening";
   text ='Good Evening';
-  $('u').removeClass('morning');
-  $('u').removeClass('afternoon');
-  $('u').addClass('evening');
-  $('a.portfolio-embeded-link').removeClass('morning');
-  $('a.portfolio-embeded-link').removeClass('afternoon');
-  $('a.portfolio-embeded-link').addClass('evening');
+  $('span.welcome').removeClass('morning');
+  $('span.welcome').removeClass('afternoon');
+  $('span.welcome').addClass('evening');
+  $('a.currentPage').addClass('background-evening');
+  $('a.currentPage').removeClass('background-afternoon');
+  $('a.currentPage').removeClass('background-morning');
+  $('a.work').addClass('evening');
+  $('a.work').removeClass('morning');
+  $('a.work').removeClass('afternoon');
+  $('a.quotes-button').addClass('button-evening');
+  $('a.quotes-button').removeClass('button-afternoon');
+  $('a.quotes-button').removeClass('button-morning');
 }
 
 document.addEventListener('DOMContentLoaded', startAnimation(event));
