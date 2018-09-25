@@ -514,11 +514,11 @@ Portfolio
   }
 
   a.afternoon:hover {
-    color: black;
+    color: #9DC2EB;
   }
 
    a.evening:hover {
-    color:black;
+    color: #B6B3F9;
   }
 
   #gm{width: 200px;}
