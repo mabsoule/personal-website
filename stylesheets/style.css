@@ -170,6 +170,18 @@ nav a:hover {
 }
 
 
+@media only screen and (max-width: 630px) {
+  .leftnav {
+    display: none;
+  }
+  .rightnav {
+    display: block;
+    float: none;
+    width: 350px;
+    margin: auto auto;
+  }
+}
+
 
 /******************************************
 Launchpad
@@ -500,6 +512,14 @@ Portfolio
     margin-bottom: 20px;
   }
 
+  .portfolio h2.temporary-message {
+    font-size: 15pt;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 100;
+  }
+
+
   a.work {
     display: block;
     font-size: 45pt;
@@ -572,6 +592,13 @@ Portfolio
 
   #linkedin{width: 200px;}
   #linkedin:hover {
+    font-size: 60pt;
+    /* color: #FBA4A4; */
+    font-weight: 700;
+  }
+
+  #github{width: 200px;}
+  #github:hover {
     font-size: 60pt;
     /* color: #FBA4A4; */
     font-weight: 700;
@@ -671,6 +698,14 @@ div.case-study-footer {
 
 .footer-button-right {
   margin-left: 10px;
+}
+
+div.two-button-footer {
+  display: inline-block;
+  float: left;
+  margin: 0px 0px 0px 0px;
+  padding: 100px 5vw 0px 15vw;
+  width: auto;
 }
 
 .footer-contact {
